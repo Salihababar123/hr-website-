@@ -1838,3 +1838,49 @@ footer a:hover {
             color:  #0e0d0d;
             opacity: 0.9;
         }
+        /* Work Loom section styles */
+        .work-loom-section {
+            padding: 4rem 0;
+            background-color: #ffffff;
+        }
+        
+        .work-loom-features {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-card {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .feature-icon {
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-title {
+            color: #0F2954;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .feature-description {
+            color: #333;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .work-loom-features {
+                flex-direction: column;
+            }
+            
+            .feature-card {
+                margin-bottom: 2rem;
+            }
+        }
