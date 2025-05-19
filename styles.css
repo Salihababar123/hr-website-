@@ -483,7 +483,59 @@ h1, h2, h3, h4, h5, h6,
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+/* Calendly Integration Section Styles */
+.calendly-integration {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
 
+.calendly-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.calendly-text {
+    flex: 1;
+}
+
+.calendly-text h2 {
+    margin-bottom: 20px;
+    color: #0F2954;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.calendly-text p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    color:  #0e0d0d;
+}
+
+.calendly-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calendly-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    .calendly-content {
+        flex-direction: column;
+    }
+    
+    .calendly-text, .calendly-image {
+        width: 100%;
+    }
+}
 /* Call to Action */
 .platform-cta {
     background-color: var(--accent-color);
@@ -881,9 +933,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .recruiting-text p {
-    font-size: 28px; /* Significantly increased font size */
-    line-height: 1.5;
-    margin-bottom: 0;
+      font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
     color: #0e0d0d; /* Black subtitle */
     font-weight: normal;
 }
@@ -924,10 +976,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 34px;
     }
     
-    .recruiting-text p:first-of-type {
-        font-size: 26px; /* Significantly increased from 18px to 26px */
-    }
-    
+
 }
 
 @media (max-width: 576px) {
@@ -935,9 +984,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
     }
     
-    .recruiting-text p:first-of-type {
-        font-size: 24px; /* Significantly increased from 17px to 24px */
-    }
+    
     
     .recruiting-image::before,
     .recruiting-image::after {
@@ -1594,8 +1641,6 @@ footer a:hover {
         border-bottom: none;
     }
 }
-/* Footer layout with right section for logo and social media */
-/* Add these styles to your styles.css file */
 
 /* Footer right section with app buttons and social media */
 .footer-right {
@@ -1634,7 +1679,6 @@ footer a:hover {
     border-radius: 6px;
 }
 
-/* Social media section */
 .social-media {
     display: flex;
     gap: 15px;
@@ -1884,3 +1928,342 @@ footer a:hover {
                 margin-bottom: 2rem;
             }
         }
+        /* Living our values section styles */
+        .living-values-section {
+            padding: 3.5rem 0;
+            background-color: #f5f5f5;
+            margin-top: 2rem;
+        }
+        
+        .living-values-container {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        
+        .living-values-image {
+            flex: 0.9;
+        }
+        
+        .living-values-content {
+            flex: 1.1;
+        }
+        
+        .living-values-title {
+            color: #0F2954;
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .living-values-description {
+            color: #0e0d0d;  
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .icon-text-wrapper {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .work-loom-description {
+                max-width: 100%;
+            }
+            
+            .living-values-container {
+                flex-direction: column;
+                max-width: 100%;
+            }
+            
+            .living-values-image {
+                order: 2;
+                margin-top: 1.5rem;
+            }
+            
+            .living-values-content {
+                order: 1;
+            }
+        }
+        /* Section spacer for white space between sections */
+.section-spacer {
+    height: 4rem;
+    background-color: #ffffff;
+}
+
+/* Smarter HR section styles */
+.smarter-hr-section {
+    padding: 4rem 0;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+.smarter-hr-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.smarter-hr-image {
+    flex: 0.9;
+}
+
+.smarter-hr-content {
+    flex: 1.1;
+}
+
+.smarter-hr-title {
+    color: #0F2954;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.smarter-hr-subtitle {
+    color: #0e0d0d;  
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.smarter-hr-description {
+    color: #0e0d0d;  
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */         
+@media (max-width: 768px) {             
+    .icon-text-wrapper {                 
+        flex-direction: column;                 
+        text-align: center;                 
+        gap: 1rem;             
+    }                          
+    .work-loom-description {                 
+        max-width: 100%;             
+    }                          
+    .living-values-container, .smarter-hr-container {                 
+        flex-direction: column;                 
+        max-width: 100%;             
+    }                          
+    .living-values-image, .smarter-hr-image {                 
+        order: 2;                 
+        margin-top: 1.5rem;             
+    }                          
+    .living-values-content, .smarter-hr-content {                 
+        order: 1;             
+    }         
+}
+/* Better Hiring Solutions section styles */
+.better-hiring-section {
+    padding: 4rem 0;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+.better-hiring-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.better-hiring-image {
+    flex: 0.9;
+}
+
+.better-hiring-content {
+    flex: 1.1;
+}
+
+.better-hiring-title {
+    color: #0F2954;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.better-hiring-subtitle {
+    color:  #0e0d0d;  
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.better-hiring-description {
+    color: #0e0d0d;  
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */         
+@media (max-width: 768px) {             
+    .icon-text-wrapper {                 
+        flex-direction: column;                 
+        text-align: center;                 
+        gap: 1rem;             
+    }                          
+    .work-loom-description {                 
+        max-width: 100%;             
+    }                          
+    .living-values-container, .smarter-hr-container, .better-hiring-container {                 
+        flex-direction: column;                 
+        max-width: 100%;             
+    }                          
+    .living-values-image, .smarter-hr-image, .better-hiring-image {                 
+        order: 2;                 
+        margin-top: 1.5rem;             
+    }                          
+    .living-values-content, .smarter-hr-content, .better-hiring-content {                 
+        order: 1;             
+    }         
+}
+/* Effortless Integration section styles */
+.integration-section {
+    padding: 4rem 0;
+    background-color: #f0f0f0;
+    margin-bottom: 2rem;
+}
+
+.integration-container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.integration-image {
+    flex: 0.9;
+}
+
+.integration-content {
+    flex: 1.1;
+}
+
+.integration-title {
+    color: #0F2954;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.integration-subtitle {
+    color: #0e0d0d;  
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.integration-description {
+    color:  #0e0d0d;  
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */         
+@media (max-width: 768px) {             
+    .icon-text-wrapper {                 
+        flex-direction: column;                 
+        text-align: center;                 
+        gap: 1rem;             
+    }                          
+    .work-loom-description {                 
+        max-width: 100%;             
+    }                          
+    .living-values-container, .smarter-hr-container, .better-hiring-container, .integration-container {                 
+        flex-direction: column;                 
+        max-width: 100%;             
+    }                          
+    .living-values-image, .smarter-hr-image, .better-hiring-image, .integration-image {                 
+        order: 2;                 
+        margin-top: 1.5rem;             
+    }                          
+    .living-values-content, .smarter-hr-content, .better-hiring-content, .integration-content {                 
+        order: 1;             
+    }         
+}
+/* Testimonials Section Styles */
+.testimonials-section {
+    background-color: #0F4C75; /* Navy blue background */
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.testimonials-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-tile {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* Decorative elements */
+.coral-bubble {
+    position: absolute;
+    background-color: #FF9E80; /* Coral orange */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.coral-bubble-left {
+    width: 180px;
+    height: 180px;
+    bottom: -50px;
+    left: -40px;
+}
+
+.coral-bubble-right {
+    width: 180px;
+    height: 180px;
+    top: -50px;
+    right: -40px;
+}
+
+/* Removed dots pattern as requested */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .testimonial-tile {
+        margin-bottom: 1rem;
+    }
+}
