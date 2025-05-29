@@ -2366,47 +2366,75 @@ footer a:hover {
     margin: 0;
 }
 
-/* Solution Page Bubble Styling - Navy Blue Gradient - 5 BUBBLES */
+/* Solution Page Bubble Styling - Navy Blue Gradient - 7 BUBBLES TOTAL */
 .solution-page .bubble {
     position: absolute;
     border-radius: 50%;
     pointer-events: none;
     background: linear-gradient(135deg, #0F2954, #1A4B8C);
-    opacity: 0.15;
+    opacity: 0.12;
     z-index: 1;
 }
 
-/* Top Left Bubble - Large */
+/* Top Left Corner - Large */
 .solution-page .bubble-1 {
-    width: 280px;
-    height: 280px;
-    top: -80px;
-    left: -80px;
-}
-
-/* Top Right Bubble - Medium */
-.solution-page .bubble-2 {
-    width: 200px;
-    height: 200px;
-    top: -60px;
-    right: -60px;
-}
-
-/* Bottom Left Bubble - Medium */
-.solution-page .bubble-3 {
     width: 220px;
     height: 220px;
-    bottom: -70px;
-    left: -70px;
+    top: -60px;
+    left: -60px;
 }
 
-/* Bottom Right Bubble - Large */
+/* Top Right Corner - Medium */
+.solution-page .bubble-2 {
+    width: 160px;
+    height: 160px;
+    top: -40px;
+    right: -40px;
+}
+
+/* Middle Left - Small */
+.solution-page .bubble-3 {
+    width: 120px;
+    height: 120px;
+    top: 45%;
+    left: -30px;
+    transform: translateY(-50%);
+}
+
+/* Center Background - Large but subtle */
 .solution-page .bubble-4 {
     width: 300px;
     height: 300px;
-    bottom: -100px;
-    right: -100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
 }
+
+/* Middle Right - Small */
+.solution-page .bubble-5 {
+    width: 140px;
+    height: 140px;
+    top: 35%;
+    right: -35px;
+}
+
+/* Bottom Left - Medium */
+.solution-page .bubble-6 {
+    width: 180px;
+    height: 180px;
+    bottom: -50px;
+    left: -50px;
+}
+
+/* Bottom Right - Large */
+.solution-page .bubble-7 {
+    width: 250px;
+    height: 250px;
+    bottom: -70px;
+    right: -70px;
+}
+
 /* Make sure content stays above bubbles */
 .testimonials-section .container {
     position: relative;
@@ -2421,33 +2449,49 @@ footer a:hover {
     }
     
     .solution-page .bubble-1 {
-        width: 220px;
-        height: 220px;
-        top: -60px;
-        left: -60px;
+        width: 180px;
+        height: 180px;
+        top: -50px;
+        left: -50px;
     }
     
     .solution-page .bubble-2 {
-        width: 160px;
-        height: 160px;
-        top: -50px;
-        right: -50px;
+        width: 130px;
+        height: 130px;
+        top: -30px;
+        right: -30px;
     }
     
     .solution-page .bubble-3 {
-        width: 180px;
-        height: 180px;
-        bottom: -60px;
-        left: -60px;
+        width: 100px;
+        height: 100px;
+        left: -25px;
     }
     
     .solution-page .bubble-4 {
-        width: 240px;
-        height: 240px;
-        bottom: -80px;
-        right: -80px;
+        width: 250px;
+        height: 250px;
     }
     
+    .solution-page .bubble-5 {
+        width: 110px;
+        height: 110px;
+        right: -30px;
+    }
+    
+    .solution-page .bubble-6 {
+        width: 150px;
+        height: 150px;
+        bottom: -40px;
+        left: -40px;
+    }
+    
+    .solution-page .bubble-7 {
+        width: 200px;
+        height: 200px;
+        bottom: -60px;
+        right: -60px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2474,33 +2518,49 @@ footer a:hover {
     }
 
     .solution-page .bubble-1 {
-        width: 180px;
-        height: 180px;
-        top: -50px;
-        left: -50px;
+        width: 150px;
+        height: 150px;
+        top: -40px;
+        left: -40px;
     }
     
     .solution-page .bubble-2 {
-        width: 130px;
-        height: 130px;
-        top: -40px;
-        right: -40px;
+        width: 110px;
+        height: 110px;
+        top: -25px;
+        right: -25px;
     }
     
     .solution-page .bubble-3 {
-        width: 150px;
-        height: 150px;
-        bottom: -50px;
-        left: -50px;
+        width: 80px;
+        height: 80px;
+        left: -20px;
     }
     
     .solution-page .bubble-4 {
         width: 200px;
         height: 200px;
-        bottom: -70px;
-        right: -70px;
     }
     
+    .solution-page .bubble-5 {
+        width: 90px;
+        height: 90px;
+        right: -25px;
+    }
+    
+    .solution-page .bubble-6 {
+        width: 120px;
+        height: 120px;
+        bottom: -35px;
+        left: -35px;
+    }
+    
+    .solution-page .bubble-7 {
+        width: 160px;
+        height: 160px;
+        bottom: -50px;
+        right: -50px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -2523,44 +2583,60 @@ footer a:hover {
     }
     
     .solution-page .bubble-1 {
-        width: 150px;
-        height: 150px;
-        top: -40px;
-        left: -40px;
+        width: 120px;
+        height: 120px;
+        top: -35px;
+        left: -35px;
     }
  
     .solution-page .bubble-2 {
-        width: 110px;
-        height: 110px;
-        top: -35px;
-        right: -35px;
+        width: 90px;
+        height: 90px;
+        top: -20px;
+        right: -20px;
     }
     
     .solution-page .bubble-3 {
-        width: 130px;
-        height: 130px;
-        bottom: -40px;
-        left: -40px;
+        width: 70px;
+        height: 70px;
+        left: -15px;
     }
     
     .solution-page .bubble-4 {
-        width: 170px;
-        height: 170px;
-        bottom: -60px;
-        right: -60px;
+        width: 160px;
+        height: 160px;
     }
     
+    .solution-page .bubble-5 {
+        width: 75px;
+        height: 75px;
+        right: -20px;
+    }
+    
+    .solution-page .bubble-6 {
+        width: 100px;
+        height: 100px;
+        bottom: -30px;
+        left: -30px;
+    }
+    
+    .solution-page .bubble-7 {
+        width: 130px;
+        height: 130px;
+        bottom: -40px;
+        right: -40px;
+    }
 }
 /* Schedule Consultant Section Styles */
 .schedule-consultant-section {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-    padding: 80px 0;
+    padding: 20px 0; /* Drastically reduced padding */
 }
 
 .schedule-consultant-container {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px; /* Drastically reduced gap */
     flex-wrap: wrap;
 }
 
@@ -2571,18 +2647,18 @@ footer a:hover {
 
 .schedule-consultant-title {
     color: #0F2954;
-    font-size: 2.8rem;
-    margin-bottom: 25px;
+    font-size: 2.2rem; /* Reduced font size */
+    margin-bottom: 10px; /* Minimal margin */
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1; /* Tighter line height */
 }
 
 .schedule-consultant-description {
     color: #0e0d0d;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 35px;
-    max-width: 600px;
+    font-size: 1rem; /* Reduced font size */
+    line-height: 1.4; /* Tighter line height */
+    margin-bottom: 15px; /* Minimal margin */
+    max-width: 500px; /* Reduced width */
 }
 
 .schedule-consultant-image {
@@ -2590,10 +2666,21 @@ footer a:hover {
     min-width: 300px;
     text-align: center;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; /* Changed back to flex-end to push image to bottom */
     justify-content: center;
     position: relative;
-    top: 80px; /* Moves image down to align with the bottom edge of the grey section */
+    height: 100%; /* Ensure it takes full height of container */
+}
+
+.schedule-consultant-image img {
+    max-width: 60%; /* Much smaller image */
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px; /* Reduced border radius */
+    box-shadow: none;
+    background: transparent;
+    height: auto;
+    margin-bottom: -20px; /* Pull image down to edge of section */
 }
 
 .schedule-consultant-btn {
@@ -2638,51 +2725,236 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    .schedule-consultant-section {
+        padding: 15px 0; /* Minimal mobile padding */
+    }
+    
     .schedule-consultant-container {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 15px; /* Minimal gap */
     }
-    
+
     .schedule-consultant-title {
-        font-size: 2.2rem;
+        font-size: 1.8rem; /* Smaller mobile title */
+        margin-bottom: 8px; /* Minimal margin */
     }
     
+    .schedule-consultant-description {
+        margin-bottom: 12px; /* Minimal margin */
+        font-size: 0.9rem; /* Smaller mobile text */
+    }
+
     .schedule-consultant-btn {
-        padding: 15px 30px;
-        font-size: 14px;
+        padding: 12px 25px; /* Smaller button */
+        font-size: 13px;
     }
-    
-    .schedule-consultant-image {
-        top: 40px; /* Reduced offset for mobile to align near bottom edge */
+
+    .schedule-consultant-image img {
+        max-width: 50%; /* Much smaller mobile image */
+        margin-bottom: -15px; /* Pull image down on mobile too */
     }
 }
-/* Resources Section */
-.resources-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
-    padding: 4rem 0;
-}
+ /* Resources Section - Base styles ONLY FOR RESOURCES PAGE */
+        .resources-page-only .resources-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
 
-.resources-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
+        .resources-page-only .resources-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 2;
+        }
 
-.resources-title {
-    color: #0F2954;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
+        .resources-page-only .resources-title {
+            color: #0F2954;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
 
-.resources-subtitle {
-    color: #0e0d0d;
-    font-size: 1.4rem;
-    font-weight: 400;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
+        .resources-page-only .resources-subtitle {
+            color: #0e0d0d;
+            font-size: 1.4rem;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Bubble Animation Styles - ONLY FOR RESOURCES PAGE */
+        .resources-page-only .bubble {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 6s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        .resources-page-only .bubble:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e, #ffa8a8);
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .resources-page-only .bubble:nth-child(2) {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #ff7043, #ff8a65, #ffab91);
+            left: 85%;
+            top: 15%;
+            animation-delay: 1s;
+        }
+
+        .resources-page-only .bubble:nth-child(3) {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ff5722, #ff7043, #ff8a65);
+            left: 5%;
+            top: 70%;
+            animation-delay: 2s;
+        }
+
+        .resources-page-only .bubble:nth-child(4) {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6f61, #ff8a80, #ffab91);
+            left: 80%;
+            top: 65%;
+            animation-delay: 0.5s;
+        }
+
+        .resources-page-only .bubble:nth-child(5) {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #ff8a65, #ffab91, #ffccbc);
+            left: 20%;
+            top: 45%;
+            animation-delay: 3s;
+        }
+
+        .resources-page-only .bubble:nth-child(6) {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #ff7043, #ff8a65, #ffab91);
+            left: 75%;
+            top: 40%;
+            animation-delay: 1.5s;
+        }
+
+        .resources-page-only .bubble:nth-child(7) {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e, #ffa8a8);
+            left: 15%;
+            top: 10%;
+            animation-delay: 2.5s;
+        }
+
+        .resources-page-only .bubble:nth-child(8) {
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #ff5722, #ff7043, #ff8a65);
+            left: 90%;
+            top: 80%;
+            animation-delay: 4s;
+        }
+
+        .resources-page-only .bubble-small {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: floatSmall 8s infinite ease-in-out;
+            z-index: 1;
+        }
+
+        .resources-page-only .bubble-small:nth-child(9) {
+            width: 25px;
+            height: 25px;
+            background: linear-gradient(135deg, #ff8a65, #ffab91);
+            left: 30%;
+            top: 25%;
+            animation-delay: 1s;
+        }
+
+        .resources-page-only .bubble-small:nth-child(10) {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #ff6f61, #ff8a80);
+            left: 60%;
+            top: 75%;
+            animation-delay: 3.5s;
+        }
+
+        .resources-page-only .bubble-small:nth-child(11) {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #ff7043, #ff8a65);
+            left: 40%;
+            top: 60%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) scale(1);
+                opacity: 0.6;
+            }
+            25% {
+                transform: translateY(-20px) scale(1.1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-15px) scale(0.9);
+                opacity: 0.4;
+            }
+            75% {
+                transform: translateY(-25px) scale(1.05);
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes floatSmall {
+            0%, 100% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 0.3;
+            }
+            33% {
+                transform: translateY(-15px) translateX(10px);
+                opacity: 0.5;
+            }
+            66% {
+                transform: translateY(-10px) translateX(-5px);
+                opacity: 0.2;
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .resources-page-only .resources-title {
+                font-size: 2.5rem;
+            }
+            
+            .resources-page-only .resources-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .resources-page-only .bubble {
+                opacity: 0.4;
+            }
+            
+            .resources-page-only .bubble-small {
+                opacity: 0.2;
+            }
+        }
+
          /* Coral Orange Tiles Section */
         .tiles-section {
             background: #F38A5E; /* Coral orange background */
